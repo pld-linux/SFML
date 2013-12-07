@@ -1,0 +1,25 @@
+--- SFML-2.1/src/SFML/Window/Linux/GlxContext.cpp.orig	2013-07-21 09:30:08.000000000 +0200
++++ SFML-2.1/src/SFML/Window/Linux/GlxContext.cpp	2013-12-07 08:14:15.506729461 +0100
+@@ -25,12 +25,10 @@
+ ////////////////////////////////////////////////////////////
+ // Headers
+ ////////////////////////////////////////////////////////////
+-#define GLX_GLXEXT_LEGACY // so that our local glxext.h is used instead of the system one
+ #include <SFML/Window/Linux/GlxContext.hpp>
+ #include <SFML/Window/Linux/WindowImplX11.hpp>
+ #include <SFML/Window/Linux/Display.hpp>
+ #include <SFML/OpenGL.hpp>
+-#include <SFML/Window/glext/glxext.h>
+ #include <SFML/System/Err.hpp>
+ 
+ 
+--- SFML-2.1/src/SFML/Window/GlContext.cpp.orig	2013-07-21 09:30:08.000000000 +0200
++++ SFML-2.1/src/SFML/Window/GlContext.cpp	2013-12-07 08:21:11.593378667 +0100
+@@ -30,7 +30,6 @@
+ #include <SFML/System/Mutex.hpp>
+ #include <SFML/System/Lock.hpp>
+ #include <SFML/OpenGL.hpp>
+-#include <SFML/Window/glext/glext.h>
+ #include <set>
+ #include <cstdlib>
+ #include <cassert>
