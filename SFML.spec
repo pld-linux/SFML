@@ -1,12 +1,12 @@
 #
 # Conditional build:
 %bcond_without	apidocs		# do not build and package API docs
-#
+
 Summary:	SFML - Simple and Fast Multimedia Library
 Summary(pl.UTF-8):	SFML - prosta i szybka biblioteka multimedialna
 Name:		SFML
 Version:	2.1
-Release:	2
+Release:	3
 License:	BSD-like
 Group:		Libraries
 Source0:	http://sfml-dev.org/download/sfml/2.1/%{name}-%{version}-sources.zip
@@ -56,6 +56,9 @@ Pliki nagłówkowe biblioteki SFML.
 Summary:	SFML API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki SFML
 Group:		Documentation
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 API documentation for SFML library.
