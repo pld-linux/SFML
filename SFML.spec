@@ -6,7 +6,7 @@ Summary:	SFML - Simple and Fast Multimedia Library
 Summary(pl.UTF-8):	SFML - prosta i szybka biblioteka multimedialna
 Name:		SFML
 Version:	2.1
-Release:	6
+Release:	7
 License:	BSD-like
 Group:		Libraries
 Source0:	http://sfml-dev.org/download/sfml/2.1/%{name}-%{version}-sources.zip
