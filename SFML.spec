@@ -56,9 +56,7 @@ Pliki nagłówkowe biblioteki SFML.
 Summary:	SFML API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki SFML
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 API documentation for SFML library.
