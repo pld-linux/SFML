@@ -66,7 +66,7 @@ Dokumentacja API biblioteki SFML.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 # use system files
 %{__rm} -r src/SFML/Window/glext
